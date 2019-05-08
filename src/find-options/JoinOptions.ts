@@ -38,6 +38,11 @@ export interface JoinOptions {
     alias: string;
 
     /**
+     * Whether returned main entities should be distinct (duplicates removed).
+     */
+    distinct?: boolean;
+
+    /**
      * Array of columns to LEFT JOIN.
      */
     leftJoinAndSelect?: { [key: string]: string };

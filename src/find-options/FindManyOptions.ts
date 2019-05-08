@@ -15,4 +15,9 @@ export interface FindManyOptions<Entity = any> extends FindOneOptions<Entity> {
      */
     take?: number;
 
+    /**
+     * Specifies whether the query should be distinct (duplicate results omitted).
+     */
+    selectDistinct?: boolean;
+
 }

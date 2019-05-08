@@ -141,6 +141,9 @@ export class FindOptionsUtils {
         }
 
         if (options.join) {
+            if (options.join.distinct)
+                qb.distinct();
+
             if (options.join.leftJoin)
                 Object.keys(options.join.leftJoin).forEach(key => {
                     qb.leftJoin(options.join!.leftJoin![key], key);
