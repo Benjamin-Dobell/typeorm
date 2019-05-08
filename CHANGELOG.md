@@ -11,6 +11,7 @@ feel free to ask us and community.
 
 * deprecate column `readonly` option in favor of `update` and `insert` options ([#4035](https://github.com/typeorm/typeorm/pull/4035))
 * added `SelectQueryBuilder#distinct` for building distinct (`SELECT DISTINCT`) queries.
+* added `WhereFactory` which can be passed to `Repository#find` to facilitate constructing more complex queries.
 
 ## 0.2.17 (2019-05-01)
 
